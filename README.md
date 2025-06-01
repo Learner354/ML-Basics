@@ -18,10 +18,10 @@ It includes:
 - NaN/overflow protection for stability
 
 ## Next Steps
-Extend to Logistic Regression
-Add gradient clipping
-Normalize input data
-Implement early stopping
+- Extend to Logistic Regression
+- Add gradient clipping
+- Normalize input data
+- Implement early stopping
 
 If you'd like to contribute or extend this project (e.g., add batch/mini-batch support), feel free to fork.
 
@@ -30,6 +30,10 @@ If you'd like to contribute or extend this project (e.g., add batch/mini-batch s
 model = LinearRegression(learning_rate=0.01, iterations=500)
 model.fit(X, y)
 model.plot_loss()
-print(model.predict([[4]]))'''
+print(model.predict([[4]]))
+
+## plot example
+plot_losses_for_learning_rates(X, y, [0.001, 0.01, 0.1], iterations=1000)
+
 
 
